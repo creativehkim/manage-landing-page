@@ -1,9 +1,9 @@
 .navbar {
-    height: 80px;
+    height: 120px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.2rem;
+    font-size: 13px;
     position: sticky;
     top: 0;
     z-index: 999;
@@ -13,39 +13,29 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80px;
+    height: 120px;
     max-width: 1500px;
 }
 
 .navbar-logo {
-    color: #242D52;
+
     justify-self: start;
-    margin-left: 20px;
     cursor: pointer;
     text-decoration: none;
-    font-size: 2rem;
     display: flex;
     align-items: center;
 }
 
-.fa-typo3 {
-    margin-left: 0.5rem;
-    font-size: 1.8rem;
-}
-
 .nav-menu {
-    display: grid;
-    grid-template-columns: repeat(4, auto);
-    grid-gap: 10px;
-    list-style: none;
+    display: flex;
     text-align: center;
     width: 60vw;
-    justify-content: end;
+    justify-content: center;
     margin-right: 2rem;
 }
 
 .nav-item {
-    height: 80px;
+    height: 120px;
 }
 
 .nav-links {
@@ -58,11 +48,11 @@
 }
 
 .nav-links:hover {
-    border-bottom: 4px solid #242D52;
+    opacity: 0.5;
     transition: all 0.2s ease-out;
 }
 
-.fa-bars {
+.hamburger-icon {
     color: #242D52;
 }
 
@@ -129,12 +119,7 @@
         cursor: pointer;
     }
 
-    .fa-times {
-        color: #242D52;
-        font-size: 2rem;
-}
-
-.nav-links-mobile {
+    .nav-links-mobile {
         display: block;
         text-align: center;
         margin: 2rem auto;
@@ -149,18 +134,19 @@
         transition: all 0.3s ease-out;
     }
     
-.nav-links-mobile:hover {
+    .nav-links-mobile:hover {
         background: #242D52;
         color: #242424;
         transition: 250ms;
-}
     }
-    .navbar {
+}
+
+.navbar {
     height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.2rem;
+    font-size: 1rem;
     position: sticky;
     top: 0;
     z-index: 999;

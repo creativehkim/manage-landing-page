@@ -35,44 +35,52 @@ function Navbar() {
                     <img src={ Logo } alt="Logo" />
                 </Link>
             <div className='menu-icon' onClick={handleClick}>
-            <i className={click ? {CloseIcon} : {HamburgerIcon}} />
+                {click ? <img src={CloseIcon} alt='Close Icon' /> : <img src={HamburgerIcon} alt='Menu Icon' />}
             </div>
             <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className='nav-item'>
                 <Link to='/' className='nav-links' onClick={closeMobileMenu}>
-                Home
+                Pricing
+                </Link>
+            </li>
+            <li className='nav-item'> 
+                <Link
+                to='/'
+                className='nav-links'
+                onClick={closeMobileMenu} 
+                >
+                Product
                 </Link>
             </li>
             <li className='nav-item'>
                 <Link
-                to='/services'
+                to='/'
                 className='nav-links'
                 onClick={closeMobileMenu}
                 >
-                Services
+                About Us
                 </Link>
             </li>
             <li className='nav-item'>
                 <Link
-                to='/products'
+                to='/'
                 className='nav-links'
                 onClick={closeMobileMenu}
                 >
-                Products
+                Careers
                 </Link>
             </li>
-
-            <li>
+            <li className='nav-item'>
                 <Link
-                to='/sign-up'
-                className='nav-links-mobile'
+                to='/'
+                className='nav-links'
                 onClick={closeMobileMenu}
                 >
-                Sign Up
+                Community
                 </Link>
             </li>
             </ul>
-            {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
+            {button && <Button buttonStyle='btn--primary'>Get Started</Button>}
         </div>
         </nav>
     </>
