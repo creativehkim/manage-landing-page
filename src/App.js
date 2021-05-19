@@ -1,6 +1,9 @@
 import React from 'react';
-import Navbar from './components/Navbar';
 import { BrowserRouter as Router } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import HeroSection from './components/HeroSection';
+import InfoSection from './components/InfoSection';
+import Footer from './components/Footer';
 import './App.css';
 
 
@@ -9,7 +12,9 @@ const App = () => {
     <>
       <Router>
         <Navbar />
-
+        <HeroSection />
+        <InfoSection />
+        <Footer />
       </Router>
     </>
   );
