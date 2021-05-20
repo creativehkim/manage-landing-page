@@ -10,7 +10,7 @@ padding: 0 2rem;
 
 .info-row {
 display: flex;
-align-items: start;
+align-items: flex-start;
 max-width: 1500px;
 
 }

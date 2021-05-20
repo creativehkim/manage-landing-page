@@ -19,6 +19,7 @@
 
 .title {
   font-size: 16px;
+  text-align: left;
 }
 
 .info-card-body {
@@ -43,6 +44,10 @@
     left:20px;
     z-index: -1;
 }
+
+  .number {
+    margin-right: 1rem;
+  }
 
   .info-card-body {
     margin-left: 0;
