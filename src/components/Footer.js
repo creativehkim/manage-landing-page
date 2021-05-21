@@ -3,9 +3,11 @@ import './Footer.css';
 import { Button } from './Button';
 import { Link } from 'react-router-dom';
 import Logo from '../images/logo-footer.svg';
-
+import useForm from './useForm'
 
 function Footer() {
+  const { handleChange, value, handleSubmit, errors } = useForm();
+
   return (
     <div className='footer-container'>
       <section className="footer-top">
@@ -84,15 +86,18 @@ function Footer() {
         </div>
         <section className='footer-subscription'>
           <div className='input-areas'>
-            <form>
+            <form className='form' onSubmit={handleSubmit}>
               <input
                 className='footer-input'
                 name='email'
                 type='email'
                 placeholder='Updates in your inbox...'
+                value={value.email}
+                onChange={handleChange}
               />
-              <Button buttonStyle='btn--primary'>Go</Button>
-            </form>
+              {errors.email && <p>{errors.email}</p>}
+              <Button buttonStyle='btn--no-shadow'>Go</Button>
+            </form> 
         
           </div>
         <small class='website-rights'>Copyright 2020. All Rights Reserved</small>

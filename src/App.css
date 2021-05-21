@@ -7,4 +7,9 @@
   font-family: 'Be Vietnam', sans-serif;
 }
 
+.wrapper {
+  background: url('./images/bg-tablet-pattern.svg');
+  background-position: top -10% right -10%;
+  background-repeat: no-repeat;
+}
 

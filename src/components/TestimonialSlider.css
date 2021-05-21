@@ -1,0 +1,14 @@
+.testimonial-container {
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slider {
+  display: flex;
+}
+
+.testimonial-container .btn {  
+  margin-bottom: 8rem;
+}

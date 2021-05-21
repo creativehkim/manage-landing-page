@@ -5,7 +5,6 @@ import './InfoSection.css';
 
 function InfoSection() {
   return (
-    <>
       <div className='info-section'>
         <div className='container'>
           <div className='row info-row'>
@@ -39,7 +38,6 @@ function InfoSection() {
           </div>
         </div>
       </div>
-    </>
   );
 }
 
