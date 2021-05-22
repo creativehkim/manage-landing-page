@@ -3,9 +3,10 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
 import InfoSection from './components/InfoSection';
-import TestimonialSlider from './components/TestimonialSlider';
+import TestimonialSlider from './components/TestimonialSection';
 import Footer from './components/Footer';
 import './App.css';
+import { TestimonialData } from './components/TestimonialData';
 
 
 const App = () => {
@@ -16,7 +17,7 @@ const App = () => {
           <Navbar />
           <HeroSection />
           <InfoSection />
-          <TestimonialSlider />
+          <TestimonialSlider testimonials={TestimonialData} />
           <Footer />
         </div>
       </Router>

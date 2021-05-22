@@ -7,8 +7,19 @@
 
 .slider {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: scroll;
+  
 }
 
 .testimonial-container .btn {  
   margin-bottom: 8rem;
+}
+
+@media screen and (max-width: 768px) {
+  .slider {
+    flex-direction: column;
+    overflow-x:hidden;
+  }
 }

@@ -2,12 +2,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 540px;
+  width: 540px;
   background: #FAFAFA;
   text-align: center;
   padding: 4em 2em;
   margin: 3rem 0.75rem;
 }
+
 
 .name {
   font-size: 1rem;
@@ -19,4 +20,10 @@
   line-height: 26px;
   color: #242D52;
   opacity: 0.5;
+}
+
+@media screen and (max-width: 768px) {
+  .testimonial-card-wrapper {
+    max-width: 100%;
+  }
 }
