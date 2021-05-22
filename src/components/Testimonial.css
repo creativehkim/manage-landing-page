@@ -2,13 +2,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 540px;
+  max-width: 540px;
   background: #FAFAFA;
   text-align: center;
   padding: 4em 2em;
-  margin: 3rem 0.75rem;
 }
-
 
 .name {
   font-size: 1rem;
@@ -20,6 +18,13 @@
   line-height: 26px;
   color: #242D52;
   opacity: 0.5;
+}
+
+.image {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  translate: transformX(-50%);
 }
 
 @media screen and (max-width: 768px) {

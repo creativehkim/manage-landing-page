@@ -5,13 +5,22 @@
   align-items: center;
 }
 
-.slider {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow-x: scroll;
+.swiper-container {
+  max-width: 1440px;
+  padding: 3em;
+  margin: 3rem auto;
   
 }
+
+.swiper-wrapper {
+  width: 100%;
+}
+
+.swiper-slide {
+  list-style: none;
+  margin: 0;
+}
+
 
 .testimonial-container .btn {  
   margin-bottom: 8rem;
