@@ -22,9 +22,10 @@
 
 .image {
   position: absolute;
-  top: -10px;
+  width: 80px;
+  top: -40px;
   left: 50%;
-  translate: transformX(-50%);
+  transform: translateX(-50%);
 }
 
 @media screen and (max-width: 768px) {
