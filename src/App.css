@@ -7,9 +7,32 @@
   font-family: 'Be Vietnam', sans-serif;
 }
 
+h1 {
+  font-size: 56px;
+  line-height: 64px;
+}
+
+h2 {
+  font-size: 40px;
+  line-height: 44px;
+}
+
+
 .wrapper {
   background: url('./images/bg-tablet-pattern.svg');
   background-position: top -10% right -10%;
   background-repeat: no-repeat;
+  overflow: hidden;
 }
 
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  
+  h2 {
+    font-size: 30px;
+    line-height: 45px;
+  }
+}

@@ -4,7 +4,6 @@
   background: url('../images/bg-tablet-pattern.svg');
   background-position: top left -100%;
   background-repeat: no-repeat;
-  overflow: auto;
 }
 
 .container {
@@ -83,15 +82,22 @@ display: inline-block;
 @media screen and (max-width: 768px) {
   .info-section {
     padding-top: 0;
+    padding-bottom: 0;
   }
+
   .info-text-wrapper {
     margin: 2rem auto;
     padding: 0;
     text-align: center;
-  
+  }
+
+  .info-section .heading {
+    font-size: 30px !important;
+    line-height: 45px;
   }
 
   .col {
+    padding: 0;
     max-width: 100%;
     flex-basis: 100%;
   }
@@ -104,5 +110,9 @@ display: inline-block;
   .info-subtitle {
     margin: auto;
     line-height: 28px;
+  }
+
+  .info-card {
+    text-align: left;
   }
 }

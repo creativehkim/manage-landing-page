@@ -10,9 +10,9 @@ function InfoSection() {
           <div className='row info-row'>
           <div className='col'>
               <div className='info-text-wrapper'>
-                <h1 className='heading'>
+                <h2 className='heading'>
                 What’s different about Manage?
-                </h1>
+                </h2>
                 <p className='info-subtitle'>
                 Manage provides all the functionality your team needs, without the complexity. Our software is tailor-made for modern digital product teams.                 </p>
               </div>

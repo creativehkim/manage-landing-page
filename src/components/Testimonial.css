@@ -2,10 +2,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 540px;
   background: #FAFAFA;
   text-align: center;
   padding: 4em 2em;
+
 }
 
 .name {

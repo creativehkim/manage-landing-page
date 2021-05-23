@@ -69,6 +69,7 @@
 
     .navbar-container {
       position: relative;
+      padding: 0;
   }
 
     .nav-menu {

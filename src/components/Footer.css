@@ -172,6 +172,7 @@
     flex-direction: column-reverse;
     height: 100%;
     position: relative;
+    padding: 3em 2em;
   }
 
   .footer-links {

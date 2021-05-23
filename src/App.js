@@ -5,8 +5,8 @@ import HeroSection from './components/HeroSection';
 import InfoSection from './components/InfoSection';
 import TestimonialSlider from './components/TestimonialSection';
 import Footer from './components/Footer';
-import './App.css';
 import { TestimonialData } from './components/TestimonialData';
+import './App.css';
 
 
 const App = () => {

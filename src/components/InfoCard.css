@@ -32,6 +32,7 @@
 @media screen and (max-width: 768px) {
   .info-card-title {
     position: relative;
+    
   }
 
   .info-card-title::after {
@@ -43,7 +44,11 @@
     top: 0;
     left:20px;
     z-index: -1;
-}
+} 
+
+  .title {
+    font-size: 15px;
+  }
 
   .number {
     margin-right: 1rem;
