@@ -38,50 +38,52 @@ function Navbar() {
                 {click ? <img src={CloseIcon} alt='Close Icon' /> : <img src={HamburgerIcon} alt='Menu Icon' />}
             </div>
             <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-            <li className='nav-item'>
-                <Link to='/' className='nav-links' onClick={closeMobileMenu}>
-                Pricing
-                </Link>
-            </li>
-            <li className='nav-item'> 
-                <Link
-                to='/'
-                className='nav-links'
-                onClick={closeMobileMenu} 
-                >
-                Product
-                </Link>
-            </li>
-            <li className='nav-item'>
-                <Link
-                to='/'
-                className='nav-links'
-                onClick={closeMobileMenu}
-                >
-                About Us
-                </Link>
-            </li>
-            <li className='nav-item'>
-                <Link
-                to='/'
-                className='nav-links'
-                onClick={closeMobileMenu}
-                >
-                Careers
-                </Link>
-            </li>
-            <li className='nav-item'>
-                <Link
-                to='/'
-                className='nav-links'
-                onClick={closeMobileMenu}
-                >
-                Community
-                </Link>
-            </li>
+                <li className='nav-item'>
+                    <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+                    Pricing
+                    </Link>
+                </li>
+                <li className='nav-item'> 
+                    <Link
+                    to='/'
+                    className='nav-links'
+                    onClick={closeMobileMenu} 
+                    >
+                    Product
+                    </Link>
+                </li>
+                <li className='nav-item'>
+                    <Link
+                    to='/'
+                    className='nav-links'
+                    onClick={closeMobileMenu}
+                    >
+                    About Us
+                    </Link>
+                </li>
+                <li className='nav-item'>
+                    <Link
+                    to='/'
+                    className='nav-links'
+                    onClick={closeMobileMenu}
+                    >
+                    Careers
+                    </Link>
+                </li>
+                <li className='nav-item'>
+                    <Link
+                    to='/'
+                    className='nav-links'
+                    onClick={closeMobileMenu}
+                    >
+                    Community
+                    </Link>
+                </li>
             </ul>
+            
             {button && <Button buttonStyle='btn--primary' buttonSize='btn--medium'>Get Started</Button>}
-        </div>
+            </div>
+            <div className={click ? 'navbar-overlay active' : 'navbar-overlay'}></div>
         </nav>
     </>
     );
