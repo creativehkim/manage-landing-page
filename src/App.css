@@ -5,6 +5,14 @@
   margin: 0;
   padding: 0;
   font-family: 'Be Vietnam', sans-serif;
+
+}
+
+body {
+  background: url('./images/bg-tablet-pattern.svg'), url('./images/bg-tablet-pattern.svg');
+  background-position: top -10% right -30%, bottom 40% left -30%;
+  background-repeat: no-repeat, no-repeat;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -18,12 +26,6 @@ h2 {
 }
 
 
-.wrapper {
-  background: url('./images/bg-tablet-pattern.svg');
-  background-position: top -10% right -10%;
-  background-repeat: no-repeat;
-  overflow: hidden;
-}
 
 @media screen and (max-width: 768px) {
   h1 {
