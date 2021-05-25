@@ -85,7 +85,6 @@ function Footer() {
         <section className='footer-subscription'>
           <div className='input-areas'>
             <Form />
-        
           </div>
         <small class='website-rights'>Copyright 2020. All Rights Reserved</small>
         </section>

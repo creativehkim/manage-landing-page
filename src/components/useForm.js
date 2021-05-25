@@ -1,14 +1,13 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
-const useForm = (callback) => {
+const useForm = (callback, validate) => {
   const [ values, setValues ] = useState({ email: "" })
-  const [ errors, setErrors ] = useState({ email: "" })
+  const [ errors, setErrors ] = useState({})
+  const [isSubmitted, setIsSubmitted ] = useState(false)
 
   const handleChange = (e) =>{
     const { name, value } = e.target
 
-    console.log(e.target.value)
-    console.log(e.target.name)
     setValues({
       ...values, 
       [name]: value
@@ -17,15 +16,27 @@ const useForm = (callback) => {
 
   const handleSubmit = e => {
     e.preventDefault()
-    callback()
+    setErrors(validate(values))
+    setIsSubmitted(true)
 
   }
 
-  return (
+  useEffect(() => {
+    // check to see if there are no errors
+    if(Object.keys(errors).length=== 0 && isSubmitted) {
+      callback()
+    }
+    // call our callback
+    
+  }, [errors])
+
+  return {
     handleChange,
     handleSubmit,
-    values
-  )
+    values,
+    errors,
+    isSubmitted
+  }
 }
 
 export default useForm
