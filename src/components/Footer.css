@@ -253,6 +253,11 @@
 
   .footer-input {
     width: 100%;
+    
+  }
+
+  .footer-go-btn {
+    margin-left: 1rem;
   }
 
   .website-rights {
