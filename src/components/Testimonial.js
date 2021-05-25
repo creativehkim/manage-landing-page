@@ -12,7 +12,7 @@ const Testimonial = ({ src, name, text}) => {
 
     </>
   )
-
+  
 }
 
 

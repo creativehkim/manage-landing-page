@@ -148,6 +148,24 @@
   color: #F3603C;
 }
 
+.footer-go-btn {
+  background-color: #F3603C;
+  color: #fff;
+  padding: 1em 2.5em;
+  border-radius: 50px;
+  font-weight: 700;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  height: 44px;
+}
+
+.footer-go-btn:hover {
+  transition: all 0.3s ease-out;
+    background-color: #F98F75;
+    transition: 250ms;
+}
+
 .website-rights {
   color: #fff;
   opacity: 0.5;
@@ -184,8 +202,8 @@
     width: 100%;
   }
 
-  .btn {
-    width: 100%;
+  .footer-go-btn {
+    width: 80px;
   }
 
   .footer-link-wrapper {
